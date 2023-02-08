@@ -1,0 +1,14 @@
+.container{
+  position: fixed;
+  z-index: 1;
+  /* background-color: red; */
+  color: white;
+  font-weight: bold;
+  width: 10%;
+  height: 9%;
+  display: flex;
+  left: 4rem;
+  top: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
