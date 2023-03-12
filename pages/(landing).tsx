@@ -13,11 +13,14 @@ export default function Landing() {
     <>
     <div className={styles.container}>
       <div className={styles.banner}>
-        <div className={styles.row1}></div>
+        <div className={styles.row1}>ANUBHAV DHULIYA</div>
         <div className={styles.row2}>
-          <div className={styles.col1}></div>
-          <div className={styles.col2}></div>
-          <div className={styles.col3}></div>
+          <div className={styles.col1}>can we change the world?</div>
+          <div className={styles.col2}><hr className={styles.line}/></div>
+          <div className={styles.col3}>
+            <div className={styles.creatortag}>creator</div>
+            <div className={styles.engineertag}>engineer</div>
+          </div>
         </div>
       </div>
     </div>

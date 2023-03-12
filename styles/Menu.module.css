@@ -7,8 +7,10 @@
   color: white;
   height: 9%;
   display: flex;
-  right: 4rem;
-  top: 2.5rem;
+  right: 1rem;
+  top: 1rem;
   justify-content: center;
   align-items: center;
+  color: gold;
+  mix-blend-mode: difference;
 }

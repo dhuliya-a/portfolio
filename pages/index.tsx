@@ -12,8 +12,8 @@ export default function Home() {
   return (
   <>
       <div className={styles.container}>
-        {/* <Menu></Menu>  
-        <Logo></Logo> */}
+        <Menu></Menu>  
+        <Logo></Logo>
         <Landing></Landing>
         <About></About>
         <Projects></Projects>
