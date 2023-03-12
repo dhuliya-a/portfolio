@@ -2,15 +2,17 @@
   position: fixed;
   z-index: 1;
   /* background-color: red; */
-  width: 10%;
+  width: 40%;
   font-weight: bold;
   color: white;
   height: 9%;
   display: flex;
-  right: 1rem;
-  top: 1rem;
+  right: 16rem;
+  top: 12rem;
   justify-content: center;
   align-items: center;
   color: gold;
+  font-size: 3em;
   mix-blend-mode: difference;
+  text-decoration:overline;
 }

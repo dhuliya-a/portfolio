@@ -13,7 +13,7 @@ export default function Home() {
   <>
       <div className={styles.container}>
         <Menu></Menu>  
-        <Logo></Logo>
+        {/* <Logo></Logo> */}
         <Landing></Landing>
         <About></About>
         <Projects></Projects>
