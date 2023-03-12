@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Merienda+One');
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  /* background: radial-gradient(ellipse farthest-corner at left top, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 5s ease-in-out infinite; */
+  /* background-size: 300% 200%; */
+}
+
+.banner{
+  height: 50%;
+  width: 50%;
+}
+
+.row1{
+  background-color: aqua;
+  height: 50%;
+}
+
+.row2{
+  background-color: lightblue;
+  height: 50%;
+  display: flex;
+}
+
+.col1{
+ background-color: beige;
+ width: 50%;
+ height: 100%;
+}
+
+.col2{
+  background-color: slateblue;
+  width: 25%;
+  height: 100%;
+}
+
+.col3{
+  background-color: gray;
+  width: 25%;
+  height: 100%;
+}

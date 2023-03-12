@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-import styles from '../styles/Landing.module.css'
-import { BsChevronCompactDown } from 'react-icons/bs';
-import { IconContext } from "react-icons";
+import styles from '../styles/Projects.module.css'
 
-export default function Landing() {
+export default function Projects() {
 
   const [cursorPos, setCursorPos] = useState({x:1,y:2});
   useEffect(() => {});
@@ -12,12 +10,12 @@ export default function Landing() {
   return (
     <>
     <div className={styles.container}>
-      <div className={styles.banner}>
+      <div className={styles.projects}>
         <div className={styles.row1}></div>
-        <div className={styles.row2}>
+        <div className={styles.row2}></div>
+        <div className={styles.row3}>
           <div className={styles.col1}></div>
           <div className={styles.col2}></div>
-          <div className={styles.col3}></div>
         </div>
       </div>
     </div>
