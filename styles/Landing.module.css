@@ -80,3 +80,55 @@
   font-weight:300;
   mix-blend-mode: difference;  
 }
+
+/* Apply different styles for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .banner {
+    width: 100%;
+  }
+  
+  .row1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.2em;
+  }
+  
+  .col1 {
+    width: 100%;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    font-size: 1.5rem;
+  }
+  
+  .col2, .col3 {
+    width: 50%;
+  }
+  
+  .col3 {
+    padding-right: 0.8em;
+    padding-top: 1em;
+    font-size: 1.5rem;
+  }
+}
+
+/* Apply different styles for screens smaller than 480px */
+@media only screen and (max-width: 480px) {
+  .row1 {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+  }
+  
+  .col1 {
+    font-size: 1rem;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+  }
+  
+  .col3 {
+    font-size: 1rem;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+  }}

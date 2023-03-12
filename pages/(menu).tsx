@@ -4,7 +4,7 @@ import style from './../styles/Menu.module.css';
 export default function Menu() {
   return (
     <div
-    className={style.container}>WORK IN PROGRESS</div>
+    className={style.container}>MENU</div>
     
   )
 }
