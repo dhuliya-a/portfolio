@@ -26,25 +26,54 @@
   background-color: slateblue;
   height: 100%;
   width: 50%;
+  padding: 1em;
 }
 
 .col2{
-  background-color: gray;
+  /* background-color: gray; */
   height: 100%;
   width: 50%;
 }
 
 .row1{
-  background-color: aqua;
-  height: 17%;
+  /* background-color: aqua; */
+  height: 10%;
+  display: flex;
+}
+
+.line{
+  width: 92%;
+  border-color: gold;
+  margin-top: 0.5em;
+  mix-blend-mode: difference;  
+}
+
+.title{
+  width: 30%;
+  font-size: 1.5rem;
+  color: gold;
+  font-family: 'Raleway';
+  letter-spacing: 0.5em;
+  font-weight: bolder;
+  mix-blend-mode: difference;  
 }
 
 .row2{
-  background-color: lightblue;
+  /* background-color: lightblue; */
   height: 75%;
+  font-size: 1.1rem;
+  text-align: justify;
+  padding: 1em;
 }
 
 .row3{
- background-color: beige;
+ background-color: blue;
+ font-weight: bold;
  height: 8%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 20%;
+ left: 80%;
+ position: relative;
 }
