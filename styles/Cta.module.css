@@ -8,6 +8,7 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
+  font-family: 'Raleway';
   /* background: radial-gradient(ellipse farthest-corner at left top, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   animation: gradient 5s ease-in-out infinite; */
   /* background-size: 300% 200%; */
@@ -22,20 +23,30 @@
 
 
 .row1{
-  background-color: aqua;
+  /* background-color: aqua; */
   height: 10%;
   width: 100%;
   display: flex;
 }
 
+.title{
+  width: 30%;
+  font-size: 1.5rem;
+  color: gold;
+  letter-spacing: 0.5em;
+  font-weight: bolder;
+  mix-blend-mode: difference;  
+}
+
 .row2{
-  background-color: lightblue;
+  /* background-color: lightblue; */
   height: 25%;
   width: 100%;
+  font-size: 3.3rem;
 }
 
 .row3{
-  background-color: pink;
+  /* background-color: pink; */
   height: 65%;
   width: 100%;
   display: flex;
@@ -51,17 +62,40 @@
 .line{
   width: 70%;
   height: 100%;
-  background-color: peru;
+  /* background-color: peru; */
 }
+
+.line2{
+  width: 100%;
+  border-color: gold;
+  margin-top: 1em;
+  mix-blend-mode: difference;  
+}
+
 
 .socials{
   width: 30%;
   height: 100%;
-  background-color: violet;
+  /* background-color: violet; */
 }
 
 .form{
   width: 70%;
   height: 100%;
-  background-color: peru;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.socialsTitle {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: 0.5em;
+  color: gold;
+  mix-blend-mode: difference;
+}
+
+.socialsLink {
+
 }
