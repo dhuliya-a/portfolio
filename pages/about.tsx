@@ -22,7 +22,7 @@ export default function About() {
             <p  className={styles.p1}>Currently working as a Senior Software Engineer at Optum, I did my Bachelor’s in Computer Science & Engineering from Shiv Nadar University, Delhi-NCR. In the past, I have gained valuable work experience in various positions such as a Research Trainee at Defence R&D Organization of India where I utilized a Super-Resolution Generative Adversarial Network (SRGAN) to address the challenge of super-resolution and refining jointly. My product-based experiences include my work as a Full-Stack Software Engineer at FloBiz where I developed tools for Indian businesses and as a front-end engineer at Troopr.ai, where I created custom UI components and features.</p>
             <p  className={styles.p1}>My product-based experiences include my work as a Full-Stack Software Engineer at FloBiz where I developed tools for Indian businesses and as a front-end engineer at Troopr.ai, where I created custom UI components and features.</p>
             <p  className={styles.p1}>During my free time, I enjoy playing football, pursuing personal projects such as developing applications, creating films, and writing poems, and going for a run.</p>
-            <a href={require('../public/Resume_Anubhav_Dhuliya.pdf')} target = "_blank"><div className={styles.row3}>RESUME</div></a>
+            {/* <a href={require('../public/Resume_Anubhav_Dhuliya.pdf')} target = "_blank"><div className={styles.row3}>RESUME</div></a> */}
           </div>
         </div>
       </div>
