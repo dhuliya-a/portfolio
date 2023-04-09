@@ -12,7 +12,7 @@ export default function Cta() {
     <div className={styles.container} id="contact">
       <div className={styles.cta}>
           <div className={styles.row1}>
-            <div className={styles.title}>LET'S CONNECT</div>
+            <div className={styles.title}>LET&apos;S CONNECT</div>
             <hr className={styles.line2}/>
           </div>
           <div className={styles.row2}>Feel free to drop a message if you have any questions or would like to collaborate on a project!</div>

@@ -15,7 +15,7 @@ export default function Projects() {
         <div className={styles.title}>SELECTED PROJECTS</div>
           <div className={styles.line}><hr className={styles.line2}/></div>
         </div>
-        <div className={styles.row2}>Take a look at some of the projects I've built.</div>
+        <div className={styles.row2}>Take a look at some of the projects I&apos;ve built.</div>
         <div className={styles.row3}>
           <div className={styles.col1}>
             <div className={styles.project}>
