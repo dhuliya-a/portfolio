@@ -44,7 +44,7 @@
 }
 
 
-.container::-webkit-scrollbar { 
+.mainContainer::-webkit-scrollbar { 
   display: none;
 }
 
@@ -61,7 +61,7 @@
 }
 
  @media only screen and (min-width: 320px){
- .container{
+ .mainContainer{
   --section-title: 1.2rem;
   --section-sub-title: 1rem;
   --section-text: 0.97rem;
@@ -70,7 +70,7 @@
 }
 
 @media only screen and (min-width: 375px){
-  .container{
+  .mainContainer{
    --section-title: 1.2rem;
    --section-sub-title: 1rem;
    --section-text: 0.85rem;
@@ -79,7 +79,7 @@
  }
 
  @media only screen and (min-width: 425px){
-  .container{
+  .mainContainer{
    --section-title: 1.2rem;
    --section-sub-title: 1rem;
    --section-text: 0.97rem;
@@ -88,7 +88,7 @@
  }
 
  @media only screen and (min-width: 768px){
-  .container{
+  .mainContainer{
    --section-title: 2.2rem;
    --section-sub-title: 1rem;
    --section-text: 1.2rem;
@@ -97,16 +97,16 @@
  }
 
  @media only screen and (min-width: 1024px){
-  .container{
-   --section-title: 4.2rem;
+  .mainContainer{
+   --section-title: 2.2rem;
    --section-sub-title: 1rem;
-   --section-text: 1rem;
+   --section-text: 0.97rem;
    --section-links: 0.97rem;
   }
  }
 
  @media only screen and (min-width: 1440px){
-  .container{
+  .mainContainer{
    --section-title: 3rem;
    --section-sub-title: 2rem;
    --section-text: 1.1rem;
@@ -116,7 +116,7 @@
  
  
  /* @media only screen and (min-width: 1640px){
-  .container{
+  .mainContainer{
    --section-title: 3rem;
    --section-sub-title: 2rem;
    --section-text: 1.1rem;
