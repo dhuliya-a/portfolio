@@ -14,7 +14,7 @@
 }
 
 .projects{
-  height: 80%;
+  height: 65%;
   width: 80%;
   display: grid;
   grid-template-rows: 0.09fr 0.2fr 0.71fr;
@@ -66,10 +66,9 @@ width: 60%;
 .col1{
  /* background-color: beige; */
  width: 65%;
- height: 80%;
+ height: 50%;
  overflow-y: scroll;
  padding-top: 1em;
- margin-top: 1rem;
  -ms-overflow-style: none;
  scrollbar-width: none; 
 }
@@ -82,9 +81,9 @@ width: 60%;
 .col2{
   background-color: slateblue;
   width: 35%;
-  height: 70%;
+  height: 60%;
   padding: 1em;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 
 .project{

@@ -9,7 +9,7 @@ export default function Projects() {
 
   return (
     <>
-    <div className={styles.container}>
+    <div className={styles.container} id="projects">
       <div className={styles.projects}>
         <div className={styles.row1}>
         <div className={styles.title}>SELECTED PROJECTS</div>
@@ -22,6 +22,7 @@ export default function Projects() {
               <div className={styles.projectTitle}>Layermint</div>
               <div className={styles.projectBody}>Project @ The Untitled Collective<br/>
                                                   Full-Stack Developer<br/>
+                                                  <br/>
                                                   An image generation & NFT-minting tool using layer assets to create your own collection.
               </div>
             </div>
@@ -29,6 +30,7 @@ export default function Projects() {
               <div className={styles.projectTitle}>Layermint</div>
               <div className={styles.projectBody}>Project @ The Untitled Collective<br/>
                                                   Full-Stack Developer<br/>
+                                                  <br/>
                                                   An image generation & NFT-minting tool using layer assets to create your own collection.
               </div>
             </div>
@@ -36,6 +38,7 @@ export default function Projects() {
               <div className={styles.projectTitle}>Layermint</div>
               <div className={styles.projectBody}>Project @ The Untitled Collective<br/>
                                                   Full-Stack Developer<br/>
+                                                  <br/>
                                                   An image generation & NFT-minting tool using layer assets to create your own collection.
               </div>
             </div>
@@ -43,6 +46,7 @@ export default function Projects() {
               <div className={styles.projectTitle}>Layermint</div>
               <div className={styles.projectBody}>Project @ The Untitled Collective<br/>
                                                   Full-Stack Developer<br/>
+                                                  <br/>
                                                   An image generation & NFT-minting tool using layer assets to create your own collection.
               </div>
             </div>

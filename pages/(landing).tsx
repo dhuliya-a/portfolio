@@ -13,7 +13,8 @@ export default function Landing() {
     <>
     <div className={styles.container}>
       <div className={styles.banner}>
-        <div className={styles.row1}>ANUBHAV DHULIYA</div>
+        <div className={styles.row1}>
+          <p>ANUBHAV</p><p> DHULIYA</p></div>
         <div className={styles.row2}>
           <div className={styles.col1}>can we change the world?</div>
           <div className={styles.col2}><hr className={styles.line}/></div>

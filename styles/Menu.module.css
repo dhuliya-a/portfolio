@@ -2,15 +2,27 @@
   position: fixed;
   z-index: 1;
   /* background-color: red; */
-  width: 10%;
+  width: 100%;
   font-weight: bold;
   color: white;
-  height: 9%;
+  height: 100%;
   display: flex;
-  right: 1rem;
-  top: 1rem;
+  /* right: 1rem;
+  top: 1rem; */
   justify-content: center;
   align-items: center;
   color: gold;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
+}
+
+.button{
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+}
+
+.menu{
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
 }

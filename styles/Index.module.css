@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Merienda+One');
+
+.container {
+  /* Color Variables */
+  --primary: white; 
+  --secondary: #2A00FF;
+  --tertiary: #2A00FF;
+  /* Size variables */
+  --section-title: 1.2rem;
+  --section-sub-title: 1rem;
+  --section-text: 0.652rem;
+  --section-links: 0.80rem;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  /* background: radial-gradient(ellipse farthest-corner at left top, white, white, blue, blue); */
+  background-color: var(--primary);
+  animation: gradient 25s ease-in-out infinite;
+  background-size: 300% 200%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  font-family: 'Raleway';
+  color: var(--secondary);
+}
+
+.container::-webkit-scrollbar { 
+  display: none;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+ @media only screen and (min-width: 320px){
+ .container{
+  --section-title: 1.2rem;
+  --section-sub-title: 1rem;
+  --section-text: 0.97rem;
+  --section-links: 0.80rem;
+ }
+}
+
+@media only screen and (min-width: 375px){
+  .container{
+   --section-title: 1.2rem;
+   --section-sub-title: 1rem;
+   --section-text: 0.85rem;
+   --section-links: 0.80rem;
+  }
+ }
+
+ @media only screen and (min-width: 425px){
+  .container{
+   --section-title: 1.2rem;
+   --section-sub-title: 1rem;
+   --section-text: 0.97rem;
+   --section-links: 0.80rem;
+  }
+ }
+
+ @media only screen and (min-width: 768px){
+  .container{
+   --section-title: 2.2rem;
+   --section-sub-title: 1rem;
+   --section-text: 1.2rem;
+   --section-links: 1.2rem;
+  }
+ }
+
+ @media only screen and (min-width: 1024px){
+  .container{
+   --section-title: 2.2rem;
+   --section-sub-title: 1rem;
+   --section-text: 0.97rem;
+   --section-links: 0.97rem;
+  }
+ }
+
+ @media only screen and (min-width: 1440px){
+  .container{
+   --section-title: 3rem;
+   --section-sub-title: 2rem;
+   --section-text: 1.1rem;
+   --section-links: 1rem;
+  }
+ }
+ 
+ 
+ /* @media only screen and (min-width: 1640px){
+  .container{
+   --section-title: 3rem;
+   --section-sub-title: 2rem;
+   --section-text: 1.1rem;
+   --section-links: 1rem;
+  }
+ }
+  */
