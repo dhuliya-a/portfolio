@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Merienda+One');
 
-.container {
+.mainContainer {
   /* Color Variables */
   --primary: white; 
   --secondary: #2A00FF;
@@ -23,6 +23,26 @@
   font-family: 'Raleway';
   color: var(--secondary);
 }
+
+.mainContainer:hover > #trailer{
+  opacity: 1;
+}
+
+#trailer{
+  height: 5rem;
+  width: 5rem;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  pointer-events: none;
+  opacity: 0;
+  /* background-color: red; */
+  border: 0.1rem solid red;
+  transition: opacity 500ms ease;
+  border-radius: 50%;
+}
+
 
 .container::-webkit-scrollbar { 
   display: none;
@@ -78,9 +98,9 @@
 
  @media only screen and (min-width: 1024px){
   .container{
-   --section-title: 2.2rem;
+   --section-title: 4.2rem;
    --section-sub-title: 1rem;
-   --section-text: 0.97rem;
+   --section-text: 1rem;
    --section-links: 0.97rem;
   }
  }
