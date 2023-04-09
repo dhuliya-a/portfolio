@@ -1,6 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Index.module.css'
 import Landing from './(landing)'
 import About from './about';
 import Logo from './(logo)'
@@ -12,11 +10,11 @@ export default function Home() {
   return (
   <>
       <div className={styles.container}>
-        <Menu></Menu>  
-        {/* <Logo></Logo> */}
+        {/* <Menu></Menu>   */}
+        <Logo></Logo>
         <Landing></Landing>
         <About></About>
-        <Projects></Projects>
+        {/* <Projects></Projects> */}
         <Cta></Cta>
       </div>
   </>

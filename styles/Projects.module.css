@@ -14,7 +14,7 @@
 }
 
 .projects{
-  height: 80%;
+  height: 65%;
   width: 80%;
   display: grid;
   grid-template-rows: 0.09fr 0.2fr 0.71fr;
@@ -24,30 +24,86 @@
 
 
 .row1{
-  background-color: aqua;
+  /* background-color: aqua; */
   /* height: 50%; */
   grid-area: header;
-}
-
-.row2{
-  background-color: lightblue;
-  grid-area: title;
-}
-
-.row3{
-  background-color: pink;
-  grid-area: projects;
   display: flex;
 }
 
-.col1{
- background-color: beige;
- width: 65%;
- height: 100%;
+.line{
+width: 60%;
 }
+
+.line2{
+  width: 100%;
+  border-color: gold;
+  margin-top: 1em;
+  mix-blend-mode: difference;  
+}
+
+.title{
+  width: 40%;
+  font-size: 1.5rem;
+  color: gold;
+  font-family: 'Raleway';
+  letter-spacing: 0.5em;
+  font-weight: bolder;
+  mix-blend-mode: difference;  
+}
+.row2{
+  /* background-color: lightblue; */
+  grid-area: title;
+  font-size: 3.8em;
+}
+
+.row3{
+  /* background-color: pink; */
+  grid-area: projects;
+  display: flex;
+  align-items: flex-start;
+}
+
+.col1{
+ /* background-color: beige; */
+ width: 65%;
+ height: 50%;
+ overflow-y: scroll;
+ padding-top: 1em;
+ -ms-overflow-style: none;
+ scrollbar-width: none; 
+}
+
+.col1::-webkit-scrollbar { 
+  display: none;
+  }
+  
 
 .col2{
   background-color: slateblue;
   width: 35%;
-  height: 100%; 
+  height: 60%;
+  padding: 1em;
+  /* margin-top: 4rem; */
+}
+
+.project{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+.projectTitle{
+  height: 10%;
+  width: 50%;
+  border-bottom: 2px solid #000;
+  padding-bottom: 3px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.projectBody{
+  height: 75%;
+  width: 100%;
+  padding-top: 1em;
 }
