@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import styles from '../styles/Cta.module.css'
-
+import Link from 'next/link';
 export default function Cta() {
 
   const [cursorPos, setCursorPos] = useState({x:1,y:2});
@@ -19,8 +19,8 @@ export default function Cta() {
           <div className={styles.row3}>
             <div className={styles.socials}>
               <p className={styles.socialsTitle}>SOCIALS</p>
-              <a href="https://github.com/dhuliya-a" target="_blank"><p className={styles.socialsLink}>GitHub</p></a>
-              <a href="https://www.linkedin.com/in/adhuliya" target="_blank"><p className={styles.socialsLink}>LinkedIn</p></a>
+              <Link  href="https://github.com/dhuliya-a" target="_blank"><p className={styles.socialsLink}>GitHub</p></Link >
+              <Link  href="https://www.linkedin.com/in/adhuliya" target="_blank"><p className={styles.socialsLink}>LinkedIn</p></Link >
               {/* <p className={styles.socialsLink}>Instagram</p> */}
             </div>
             <p className={styles.socialsTitle2}>DROP A MESSAGE</p>
