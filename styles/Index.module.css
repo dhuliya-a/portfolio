@@ -17,6 +17,7 @@
   /* background: radial-gradient(ellipse farthest-corner at left top, white, white, blue, blue); */
   background-color: var(--primary);
   animation: gradient 25s ease-in-out infinite;
+  /* background-image: url('../../../Mac.svg'); */
   background-size: 300% 200%;
   -ms-overflow-style: none;
   scrollbar-width: none;

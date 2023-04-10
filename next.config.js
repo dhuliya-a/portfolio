@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+const dotenv = require('dotenv');
+dotenv.config();
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true

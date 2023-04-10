@@ -11,7 +11,6 @@ export default function Home() {
   
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     const { clientX, clientY } = event; 
-    console.log("list : ", event.currentTarget.className);
     const interactionBoolean = event.currentTarget.classList.contains("Cta_socialsLink__fTIdR")? true: false;
     setMousePosition({ x: clientX, y: clientY, interacting: interactionBoolean });
   };
@@ -19,7 +18,6 @@ export default function Home() {
   useEffect(() => {
     const trailer = document.getElementById("Index_trailer__r5bSq");  
     if(trailer!=null){
-      console.log(mousePosition.interacting);
       const keyframe = {
         transform : `translate(${mousePosition.x - trailer.offsetWidth/3}px, ${mousePosition.y- trailer.offsetHeight/2}px)`
       }
