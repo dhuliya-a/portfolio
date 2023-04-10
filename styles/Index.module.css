@@ -29,6 +29,7 @@
   opacity: 1;
 }
 
+
 #trailer{
   height: 5rem;
   width: 5rem;
@@ -40,8 +41,9 @@
   opacity: 0;
   /* background-color: red; */
   border: 0.1rem solid red;
-  transition: opacity 500ms ease;
+  transition: all 500ms ease;
   border-radius: 50%;
+  display: none;
 }
 
 
@@ -98,6 +100,9 @@
  }
 
  @media only screen and (min-width: 1024px){
+  #trailer{
+    display:initial;
+  }
   .mainContainer{
    --section-title: 2.2rem;
    --section-sub-title: 1rem;
@@ -107,6 +112,9 @@
  }
 
  @media only screen and (min-width: 1440px){
+  #trailer{
+    display:initial;
+  }
   .mainContainer{
    --section-title: 3rem;
    --section-sub-title: 2rem;

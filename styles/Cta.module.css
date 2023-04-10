@@ -327,3 +327,7 @@
   }
  }
  
+ .interacting{
+  height: 10rem !important;
+  width: 10rem !important;
+}

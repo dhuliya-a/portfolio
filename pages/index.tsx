@@ -7,12 +7,11 @@ import React, { useState, useEffect } from 'react';
 
 export default function Home() {
 
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0, interacting: false });
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     const { clientX, clientY } = event; 
-    const interactionBoolean = event.currentTarget.classList.contains("Cta_socialsLink__fTIdR")? true: false;
-    setMousePosition({ x: clientX, y: clientY, interacting: interactionBoolean });
+    setMousePosition({ x: clientX, y: clientY });
   };
 
   useEffect(() => {

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import styles from '../styles/Cta.module.css'
 import Link from 'next/link';
 import {sendContactForm} from './../lib/api';
+import { transform } from 'typescript';
 
 interface FormData {
   subject: string;
@@ -11,6 +12,9 @@ interface FormData {
 }
 
 export default function Cta() {
+  
+  
+  const [interacting, setInteracting] = useState(false);
   
   const [formData, setFormData] = useState<FormData>({
     subject: "",
@@ -28,6 +32,33 @@ export default function Cta() {
     await sendContactForm(formData);
   };
 
+  const handleHover = (event: React.MouseEvent<HTMLDivElement>) => {
+    setInteracting(true);
+  };
+
+  useEffect(() => {
+    console.log("interacting : ", interacting);
+    const trailer = document.getElementById("Index_trailer__r5bSq");  
+    if(trailer!=null){
+      if(interacting){
+        trailer.style.height="7rem";
+        trailer.innerHTML = '<h2>visit</h2>';
+        trailer.style.width="7rem";
+        trailer.style.background="rgba(255, 0, 0, 1)";
+      }
+      else{
+        trailer.style.height="5rem";
+        trailer.style.width="5rem";
+        trailer.innerHTML = '';
+        trailer.style.background="rgba(255, 0, 0, 0)";
+      }
+    }  
+  }, [interacting])
+  
+  const handleExit = (event: React.MouseEvent<HTMLDivElement>) =>{
+    setInteracting(false);
+  }
+
   return (
     <>
     <div className={styles.container} id="contact">
@@ -40,8 +71,8 @@ export default function Cta() {
           <div className={styles.row3}>
             <div className={styles.socials}>
               <p className={styles.socialsTitle}>SOCIALS</p>
-              <Link  href="https://github.com/dhuliya-a" target="_blank"><p className={styles.socialsLink}>GitHub</p></Link >
-              <Link  href="https://www.linkedin.com/in/adhuliya" target="_blank"><p className={styles.socialsLink}>LinkedIn</p></Link >
+              <Link  href="https://github.com/dhuliya-a" target="_blank"><p className={styles.socialsLink} onMouseOver={handleHover} onMouseLeave={handleExit}>GitHub</p></Link >
+              <Link  href="https://www.linkedin.com/in/adhuliya" target="_blank"><p className={styles.socialsLink} onMouseOver={handleHover} onMouseLeave={handleExit}>LinkedIn</p></Link >
               {/* <p className={styles.socialsLink}>Instagram</p> */}
             </div>
             <p className={styles.socialsTitle2}>DROP A MESSAGE</p>
