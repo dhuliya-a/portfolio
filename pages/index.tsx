@@ -4,6 +4,7 @@ import About from './about';
 import Logo from './(logo)'
 import Cta from './cta';
 import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
 
 export default function Home() {
 
@@ -27,6 +28,9 @@ export default function Home() {
 
   return (
   <>
+  <Head>
+  <title>Anubhav Dhuliya | Software Engineer</title>
+  </Head>
        {/* <Menu></Menu>   */}
       <div className={styles.mainContainer} onMouseMove={handleMouseMove}>
    
