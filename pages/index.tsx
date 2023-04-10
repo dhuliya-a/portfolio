@@ -33,7 +33,7 @@ export default function Home() {
         <div id={styles.trailer}>
         {/* Mouse position: {mousePosition.x}, {mousePosition.y} */}
         </div>
-        <Logo></Logo>
+        {/* <Logo></Logo> */}
         <Landing></Landing>
         <About></About>
         {/* <Projects></Projects> */}

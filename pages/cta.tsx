@@ -30,6 +30,7 @@ export default function Cta() {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     await sendContactForm(formData);
+    window.alert("Thank you for your message!");
   };
 
   const handleHover = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -92,7 +93,6 @@ export default function Cta() {
               <button type ="submit" className={styles.formSubmit}>SEND</button>
             </form>
           </div>
-          {/* <div className={styles.submit}></div> */}
       </div>
     </div>
   </>

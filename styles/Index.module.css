@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
-@import url('https://fonts.googleapis.com/css?family=Merienda+One');
+@import url('https://fonts.googleapis.com/css2?family=Notable');
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500');
 
 .mainContainer {
   /* Color Variables */
@@ -9,7 +10,7 @@
   /* Size variables */
   --section-title: 1.2rem;
   --section-sub-title: 1rem;
-  --section-text: 0.652rem;
+  --section-text: 0.6rem;
   --section-links: 0.80rem;
   height: 100vh;
   width: 100vw;
@@ -21,7 +22,7 @@
   background-size: 300% 200%;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  font-family: 'Raleway';
+  font-family: 'Baloo 2';
   color: var(--secondary);
 }
 
@@ -44,6 +45,8 @@
   transition: all 500ms ease;
   border-radius: 50%;
   display: none;
+  font-family: 'Notable';
+  font-size: calc(var(--section-text)/1.5);
 }
 
 
@@ -65,37 +68,37 @@
 
  @media only screen and (min-width: 320px){
  .mainContainer{
-  --section-title: 1.2rem;
-  --section-sub-title: 1rem;
-  --section-text: 0.97rem;
-  --section-links: 0.80rem;
+  --section-title: 1.4rem;
+  --section-sub-title: 1.2rem;
+  --section-text: 0.7rem;
+  --section-links: 0.90rem;
  }
 }
 
 @media only screen and (min-width: 375px){
   .mainContainer{
-   --section-title: 1.2rem;
-   --section-sub-title: 1rem;
-   --section-text: 0.85rem;
-   --section-links: 0.80rem;
+   --section-title: 1.5rem;
+   --section-sub-title: 1.3rem;
+   --section-text: 0.75rem;
+   --section-links: 0.95rem;
   }
  }
 
  @media only screen and (min-width: 425px){
   .mainContainer{
-   --section-title: 1.2rem;
-   --section-sub-title: 1rem;
-   --section-text: 0.97rem;
-   --section-links: 0.80rem;
+   --section-title: 1.8rem;
+   --section-sub-title: 1.4rem;
+   --section-text: 0.8rem;
+   --section-links: 1rem;
   }
  }
 
  @media only screen and (min-width: 768px){
   .mainContainer{
-   --section-title: 2.2rem;
-   --section-sub-title: 1rem;
-   --section-text: 1.2rem;
-   --section-links: 1.2rem;
+   --section-title: 2.5rem;
+   --section-sub-title: 1.7rem;
+   --section-text: 1rem;
+   --section-links: 1.4rem;
   }
  }
 
@@ -104,10 +107,10 @@
     display:initial;
   }
   .mainContainer{
-   --section-title: 2.2rem;
-   --section-sub-title: 1rem;
-   --section-text: 0.97rem;
-   --section-links: 0.97rem;
+   --section-title: 2.8rem;
+   --section-sub-title: 1.9rem;
+   --section-text: 1rem;
+   --section-links: 1.4rem;
   }
  }
 
