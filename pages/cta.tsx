@@ -2,10 +2,31 @@ import React, { useState, useEffect } from 'react';
 
 import styles from '../styles/Cta.module.css'
 import Link from 'next/link';
-export default function Cta() {
+import {sendContactForm} from './../lib/api';
 
-  const [cursorPos, setCursorPos] = useState({x:1,y:2});
-  useEffect(() => {});
+interface FormData {
+  subject: string;
+  email: string;
+  message: string;
+}
+
+export default function Cta() {
+  
+  const [formData, setFormData] = useState<FormData>({
+    subject: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    await sendContactForm(formData);
+  };
 
   return (
     <>
@@ -24,20 +45,20 @@ export default function Cta() {
               {/* <p className={styles.socialsLink}>Instagram</p> */}
             </div>
             <p className={styles.socialsTitle2}>DROP A MESSAGE</p>
-            <form className={styles.form}>
+            <form className={styles.form} onSubmit={handleSubmit}>
               <div className={styles.formEmail}>
                 <label>Email</label>
-                <input></input>
+                <input type="email" name="email" value={formData.email} onChange={handleChange} ></input>
               </div>
               <div className={styles.formSubject}>
                 <label>Subject</label>
-                <input ></input>
+                <input name="subject" value={formData.subject} onChange={handleChange} ></input>
               </div>
               <div className={styles.formMessage}>
                 <label>Message</label>
-                <textarea placeholder='Your message'></textarea>
+                <textarea placeholder='Your message' name="message" value={formData.message} onChange={handleChange}></textarea>
               </div>
-              <button className={styles.formSubmit}>SEND</button>
+              <button type ="submit" className={styles.formSubmit}>SEND</button>
             </form>
           </div>
           {/* <div className={styles.submit}></div> */}

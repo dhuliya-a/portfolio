@@ -1,23 +1,27 @@
 /** @type {import('next').NextConfig} */
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+const dotenv = require('dotenv');
+dotenv.config();
+
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.(pdf)$/,
-      use: [
-        {
-          loader: 'file-loader',
-          options: {
-            publicPath: '/.next/public',
-            outputPath: '/.next/public',
-          },
-        },
-      ],
-    });
+  swcMinify: true
+  // ,
+  // webpack: (config) => {
+  //   config.plugins.push(
+  //     new CopyWebpackPlugin({
+  //       patterns: [
+  //         {
+  //           from: 'public/Resume_Anubhav_Dhuliya.pdf',
+  //           to: 'static/files/Resume_Anubhav_Dhuliya.pdf',
+  //         },
+  //       ],
+  //     })
+  //   );
 
-    return config;
-  }
+  //   return config;
+  // }
 }
 
 module.exports = nextConfig

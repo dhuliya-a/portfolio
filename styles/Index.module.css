@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Merienda+One');
 
-.container {
+.mainContainer {
   /* Color Variables */
   --primary: white; 
   --secondary: #2A00FF;
@@ -17,6 +17,7 @@
   /* background: radial-gradient(ellipse farthest-corner at left top, white, white, blue, blue); */
   background-color: var(--primary);
   animation: gradient 25s ease-in-out infinite;
+  /* background-image: url('../../../Mac.svg'); */
   background-size: 300% 200%;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -24,7 +25,27 @@
   color: var(--secondary);
 }
 
-.container::-webkit-scrollbar { 
+.mainContainer:hover > #trailer{
+  opacity: 1;
+}
+
+#trailer{
+  height: 5rem;
+  width: 5rem;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  pointer-events: none;
+  opacity: 0;
+  /* background-color: red; */
+  border: 0.1rem solid red;
+  transition: opacity 500ms ease;
+  border-radius: 50%;
+}
+
+
+.mainContainer::-webkit-scrollbar { 
   display: none;
 }
 
@@ -41,7 +62,7 @@
 }
 
  @media only screen and (min-width: 320px){
- .container{
+ .mainContainer{
   --section-title: 1.2rem;
   --section-sub-title: 1rem;
   --section-text: 0.97rem;
@@ -50,7 +71,7 @@
 }
 
 @media only screen and (min-width: 375px){
-  .container{
+  .mainContainer{
    --section-title: 1.2rem;
    --section-sub-title: 1rem;
    --section-text: 0.85rem;
@@ -59,7 +80,7 @@
  }
 
  @media only screen and (min-width: 425px){
-  .container{
+  .mainContainer{
    --section-title: 1.2rem;
    --section-sub-title: 1rem;
    --section-text: 0.97rem;
@@ -68,7 +89,7 @@
  }
 
  @media only screen and (min-width: 768px){
-  .container{
+  .mainContainer{
    --section-title: 2.2rem;
    --section-sub-title: 1rem;
    --section-text: 1.2rem;
@@ -77,7 +98,7 @@
  }
 
  @media only screen and (min-width: 1024px){
-  .container{
+  .mainContainer{
    --section-title: 2.2rem;
    --section-sub-title: 1rem;
    --section-text: 0.97rem;
@@ -86,7 +107,7 @@
  }
 
  @media only screen and (min-width: 1440px){
-  .container{
+  .mainContainer{
    --section-title: 3rem;
    --section-sub-title: 2rem;
    --section-text: 1.1rem;
@@ -96,7 +117,7 @@
  
  
  /* @media only screen and (min-width: 1640px){
-  .container{
+  .mainContainer{
    --section-title: 3rem;
    --section-sub-title: 2rem;
    --section-text: 1.1rem;
