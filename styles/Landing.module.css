@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500');
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P');
 .container {
   display: flex;
   justify-content: center;
@@ -49,6 +50,10 @@
  color: var(--tertiary);
  
  font-family: 'Baloo 2';
+}
+
+.col1 span {
+  font-family: 'Press Start 2P';
 }
 
 .col2{

@@ -49,7 +49,7 @@ export default function Landing() {
         <div className={styles.row1}>
           <p>ANUBHAV</p><p> DHULIYA</p></div>
         <div className={styles.row2}>
-          <div className={styles.col1}>can we change the world   <span style={{"color":"red", fontWeight:"bold", cursor:"pointer", marginLeft:"1rem"}} onMouseOver={handleHover} onMouseLeave={handleExit} onClick={handleClick}> ?</span></div>
+          <div className={styles.col1}>can ideas change the world   <span style={{"color":"red", fontWeight:"bold", cursor:"pointer", marginLeft:"0.5rem", fontFamily:"Press Start 2P"}} onMouseOver={handleHover} onMouseLeave={handleExit} onClick={handleClick}> ?</span></div>
           <div className={styles.col2}><hr className={styles.line}/></div>
           <div className={styles.col3}>
             {/* <div className={styles.creatortag}>creator</div> */}
