@@ -24,8 +24,11 @@
 
 .col1{
   height: 20%;
-  width: 100%;
+  width: 85%;
   border: 0.5rem solid blue;
+  background-image: url("../public/3.JPG");
+  background-size: cover;
+  background-position: 100%;
 }
 
 .col2{

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 import styles from '../styles/About.module.css'
 import Link from 'next/link';
@@ -14,6 +15,10 @@ export default function About() {
   const handleHover = (event: React.MouseEvent<HTMLDivElement>) => {
     setInteracting(true);
   };
+
+  const handlePdf = () => {
+       window.open('/resume.pdf', '_blank');
+    };
 
   useEffect(() => {
     console.log("interacting : ", interacting);
@@ -42,7 +47,14 @@ export default function About() {
     <>
     <div className={styles.container} id="about">
       <div className={styles.about}>
-        <div className={styles.col1}></div>
+        <div className={styles.col1}>
+        {/* <Image
+        src="/../public/1.JPG"
+        alt="My Image"
+        width={700} 
+        height={600}
+      /> */}
+        </div>
         <div className={styles.col2}>
           <div className={styles.row1}>
             <div className={styles.title}>ABOUT</div> 
@@ -55,7 +67,7 @@ export default function About() {
             <p  className={styles.p1}>During my free time, I enjoy playing football, pursuing personal projects such as developing applications, creating films, and writing poems, and going for a run.</p>
             {/* <Link href={pdfFile} target = "_blank"> */}
               <div className={styles.row3}
-              //  onMouseOver={handleHover} onMouseLeave={handleExit}
+               onMouseOver={handleHover} onMouseLeave={handleExit} onClick={handlePdf}
                 >RESUME</div>
               {/* </Link> */}
           </div>
