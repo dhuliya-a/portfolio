@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import styles from '../styles/Cta.module.css'
 import Link from 'next/link';
 import {sendContactForm} from './../lib/api';
-import { transform } from 'typescript';
 
 interface FormData {
   subject: string;

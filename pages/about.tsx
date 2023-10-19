@@ -17,7 +17,7 @@ export default function About() {
   };
 
   const handlePdf = () => {
-       window.open('/resume.pdf', '_blank');
+       window.open('/Resume.pdf', '_blank');
     };
 
   useEffect(() => {
