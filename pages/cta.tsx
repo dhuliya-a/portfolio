@@ -31,6 +31,11 @@ export default function Cta() {
     event.preventDefault();
     await sendContactForm(formData);
     window.alert("Thank you for your message!");
+    setFormData({
+    subject: "",
+    email: "",
+    message: "",
+    });
   };
 
   const handleHover = (event: React.MouseEvent<HTMLDivElement>) => {
