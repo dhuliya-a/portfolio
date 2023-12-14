@@ -17,7 +17,7 @@ export default function About() {
   };
 
   const handlePdf = () => {
-       window.open('/Resume.pdf', '_blank');
+       window.open('/Resume_Anubhav_Dhuliya.pdf', '_blank');
     };
 
   useEffect(() => {
